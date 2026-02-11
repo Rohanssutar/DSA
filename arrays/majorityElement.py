@@ -2,10 +2,8 @@
 def majorityElement(nums: list[int]) -> int:
     n = len(nums)
     for num in nums:
-        count = 0
-        for i in nums:
-            if i == num:
-                count += 1
+        count = sum(1 for i in nums if i == num)
+        if count > n // 2:
             return num
             
 if __name__ == "__main__":
