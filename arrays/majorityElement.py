@@ -1,3 +1,4 @@
+# Brute force solution
 def majorityElement(nums: list[int]) -> int:
     n = len(nums)
     for num in nums:
