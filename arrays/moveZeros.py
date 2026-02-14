@@ -15,5 +15,5 @@ def move_Zeros(nums: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     nums = [1,0,0,2,0,0,5]
-
     print(move_Zeros(nums))
+
