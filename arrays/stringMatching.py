@@ -1,3 +1,7 @@
+# Problem Statement
+# You are given an array of string words, return all strings in words that are a substring of another word. You can return the answer in any order.
+# Note: A substring is a contiguous non-empty sequence of characters within a string.
+
 # Brute force solution
 def string_Matching(words: list[str]) -> list[str]:
     result = []
@@ -28,4 +32,5 @@ def string_Matching(words: list[str]) -> list[str]:
 
 if __name__ == "__main__":
     words = ["neetcode","neeet","neet","code"]
+
     print(string_Matching(words))
