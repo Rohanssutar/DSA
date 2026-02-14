@@ -15,5 +15,5 @@ def replace_Elements(nums: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     nums = [2,4,5,3,1,2]
-
     print(replace_Elements(nums))
+
