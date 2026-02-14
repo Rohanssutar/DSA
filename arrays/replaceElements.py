@@ -1,3 +1,7 @@
+# Problem Statement
+# You are given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1.
+# After doing so, return the array.
+
 # In-place solution
 # Time complexity: O(n), Space complexity: O(1)
 def replace_Elements(nums: list[int]) -> list[int]:
@@ -11,4 +15,5 @@ def replace_Elements(nums: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     nums = [2,4,5,3,1,2]
+
     print(replace_Elements(nums))
