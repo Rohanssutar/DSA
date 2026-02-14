@@ -17,5 +17,5 @@ def count_Seniors(details: list[str]) -> int:
 
 if __name__ == "__main__":
     details = ["7868190130M7522","5303914400F9211","9273338290F4010"]
-
     print(count_Seniors(details))
+
