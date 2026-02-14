@@ -1,3 +1,6 @@
+#Problem Statement
+# Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
+
 # Brute force solution
 def hasDuplicate(nums: list[int]) -> bool:
     for i in range(len(nums)):
