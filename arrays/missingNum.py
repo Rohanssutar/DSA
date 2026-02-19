@@ -1,3 +1,6 @@
+# Problem Statement
+# Given an array nums containing n integers in the range [0, n] without any duplicates, return the single number in the range that is missing from nums.
+
 # HashSet Solution
 def missing_Num(nums: list[int]) -> int:
     hashset = set(nums)
@@ -23,4 +26,5 @@ def missing_Num(nums: list[int]) -> int:
 if __name__ == "__main__":
     nums = [1,2,3]
     print(missing_Num(nums))
+
 
