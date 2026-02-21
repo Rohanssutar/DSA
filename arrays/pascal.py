@@ -1,3 +1,7 @@
+# Problem Statement
+# You are given an integer numRows, return the first numRows of Pascal's triangle.
+# In Pascal's triangle, each number is the sum of the two numbers directly above
+
 def pascal(numrows: int) -> list[list[int]]:
     res = [[1]]
 
