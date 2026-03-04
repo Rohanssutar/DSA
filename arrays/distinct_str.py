@@ -1,3 +1,11 @@
+# Problem Statement
+# A distinct string is a string that is present only once in an array.
+
+# You are given an array of strings arr, and an integer k, return the k-th distinct string present in arr. 
+# If there are fewer than k distinct strings, return an empty string "".
+
+# Note that the strings are considered in the order in which they appear in the array.
+
 # Brute Force Solution
 class Solution:
     def distinct(self, arr: list[str], k: int) -> str:
