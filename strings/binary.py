@@ -1,8 +1,5 @@
 # Problem Statement
-# An array is considered special if the parity of every pair of adjacent elements is different. 
-# In other words, one element in each pair must be even, and the other must be odd.
-
-# You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
+# Given a binary string s ​​​​​without leading zeros, return true​​​ if s contains at most one contiguous segment of ones. Otherwise, return false.
 
 class Solution:
     def check_ones(self, s: str) -> bool:
@@ -19,3 +16,4 @@ if __name__ == "__main__":
     s = '110'
     obj = Solution()
     print(obj.check_ones(s))
+
