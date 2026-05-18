@@ -12,10 +12,10 @@ def missing_Num(nums: list[int]) -> int:
             return i+1
         
 if __name__ == "__main__":
-    nums = [1,2,3]
+    nums = [2,4]
     print(missing_Num(nums))
 
-# XOR Solution
+# # XOR Solution
 def missing_Num(nums: list[int]) -> int:
     xorr = len(nums)
 

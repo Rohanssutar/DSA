@@ -14,7 +14,7 @@ if __name__ == "__main__":
     nums = [3,4,5,6]
     target = 7
     print(twoSum(nums, target))
-
+        
 
 # Hashmap (One pass) Solution
 def twoSum(nums: list[int], target: int) -> list[int]:
