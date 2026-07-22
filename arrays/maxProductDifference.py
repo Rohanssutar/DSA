@@ -12,6 +12,7 @@ class solution:
                 min1, min2 = num, min1
             elif num < min2:
                 min2 = num
+                
         return (max1 * max2) - (min1 * min2)
 
 if __name__ == "__main__":
