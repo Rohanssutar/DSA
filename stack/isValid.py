@@ -7,21 +7,23 @@
 #     3) Every close bracket has a corresponding open bracket of the same type. 
 # Return true if s is a valid string, and false otherwise.
 
-def is_valid(s: str) -> bool:
-    stack = []
-    hashmap = { ")" : "(", "]" : "[", "}" : "{" }
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        map_parentheses = {')' : '(', ']' : '[', '}' : '{'}
 
-    for c in s:
-        if c in hashmap:
-            if stack and stack[-1] == hashmap[c]:
-                stack.pop()
+        for p in s:
+            if p in map_parentheses:
+                if stack and stack[-1] == map_parentheses[p]:
+                    stack.pop()
+                else:
+                    return False
             else:
-                return False
-        else:
-            stack.append(c)
-    
-    return True if not stack else False
+                stack.append(p)
+                
+        return True if not stack else False
 
 if __name__ == "__main__":
+    obj = Solution()
     s = "([{}])"
-    print(is_valid(s))
+    print(obj.isValid(s))
