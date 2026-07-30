@@ -1,5 +1,5 @@
 class Solution:
-    def sortArray(self, nums: list[int]) -> list[int]:
+    def sortColors(self, nums: list[int]) -> list[int]:
         def merge(arr, L, M, R):
             left, right = arr[L: M+1], arr[M+1: R+1]
             i, j, k = L, 0, 0
