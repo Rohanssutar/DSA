@@ -18,4 +18,4 @@ class solution:
 if __name__ == "__main__":
     obj = solution()
     s = "abcabcbb"
-    print(obj.longestSubstring(s)) 
+    print(obj.longestSubstring(s))
