@@ -27,6 +27,7 @@ if __name__ == "__main__":
 
 
 # Binary Search Solution
+class Solution:
 def search_Insert(nums: list[int], target: int) -> int:
     left, right = 0, len(nums) - 1
     while left <= right:
@@ -40,9 +41,10 @@ def search_Insert(nums: list[int], target: int) -> int:
     return left
 
 if __name__ == "__main__":
+    obj = Solution()
     nums = [-1,0,2,4,6,8]
     target = 5
-    print(search_Insert(nums, target))
+    print(obj.search_Insert(nums, target))
 
 
 # Linear Search Solution
