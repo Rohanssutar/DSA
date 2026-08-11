@@ -42,6 +42,6 @@ def guess_Num(n: int) -> int:
             return mid
 
 if __name__ == "__main__":
-    n = 15
+    n = 28
     print(guess_Num(n))
 
