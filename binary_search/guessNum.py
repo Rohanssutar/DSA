@@ -9,39 +9,38 @@
 # Return the number that I picked.
 
 # Guess API
-def guess_api(pick: int):
-    def guess(num: int) -> int:
-        if num == pick:
-            return 0
-        elif num > pick:
-            return -1
-        else:
-            return 1
-    return guess
+class Solution:
+    def guess_api(self, pick: int):
+        def guess(num: int) -> int:
+            if num == pick:
+                return 0
+            elif num > pick:
+                return -1
+            else:
+                return 1
+        return guess
 
-guess = guess_api(10)
+    def __init__(self):
+        self.guess = self.guess_api(10)
 
-# For loop Solution
-def guess_Num(n: int) -> int:
-    for num in range(1, n+1):
-        if guess(num) == 0:
-            return num
+    def guess_Num(self, n: int) -> int:
+        left, right = 1, n
 
-# Binary Search Solution
-def guess_Num(n: int) -> int:
-    left, right = 1, n
-
-    while left <= right:
-        mid = left + ((right - left) // 2)
-        res = guess(mid)
-        if res > 0:
-            left = mid + 1
-        elif res < 0:
-            right = mid - 1
-        else:
-            return mid
+        while left <= right:
+            mid = left + ((right - left) // 2)
+            res = self.guess(mid)
+            if res > 0:
+                left = mid + 1
+            elif res < 0:
+                right = mid - 1
+            else:
+                return mid
 
 if __name__ == "__main__":
+    obj = Solution()
     n = 28
-    print(guess_Num(n))
+    print(obj.guess_Num(n))
+
+
+
 
