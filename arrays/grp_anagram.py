@@ -5,7 +5,7 @@
 # Hashmap Solution
 from collections import defaultdict
 
-def group_Anagrams(strs: list[str]) -> list[list[str]]:
+def groupAnagrams(strs: list[str]) -> list[list[str]]:
     res = defaultdict(list)
 
     for s in strs:
@@ -18,4 +18,4 @@ def group_Anagrams(strs: list[str]) -> list[list[str]]:
 
 if __name__ == "__main__":
     strs = ["act","pots","tops","cat","stop","hat"]
-    print(group_Anagrams(strs))
+    print(groupAnagrams(strs))
